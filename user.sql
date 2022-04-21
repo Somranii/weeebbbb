@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  sam. 16 avr. 2022 à 16:21
+-- Généré le :  ven. 22 avr. 2022 à 01:46
 -- Version du serveur :  5.7.17
 -- Version de PHP :  5.6.30
 
@@ -46,7 +46,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `name`, `age`, `phone`, `sexe`, `type_p`, `type_d`, `mail`, `mdp`, `image`) VALUES
-(5, 'aziz', 20, 52330219, 'male', 'doner', '', 'aziz.ss@gmail.com', '123', 'tÃ©lÃ©chargÃ©.jfif');
+(18, 'aziz', 12, 12, 'male', 'doner', '', 'aziz.pp@gmail.com', '123', ''),
+(12, 'aziz', 20, 52330219, 'male', 'doner', '', 'aziz.ss@gmail.com', '123', 'i1-ConvertImage.jpg');
 
 --
 -- Index pour les tables déchargées
@@ -66,7 +67,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;COMMIT;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
