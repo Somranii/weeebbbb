@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel= "stylesheet" href="style.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    
+    <title>Words matter-Disability Language Guide</title>
+</head>
+<body>
+    <section class="main-1">
+        <nav>
+            
+
+            <a href="logo.png" class="logo"> 
+                <span>3aweni</span>    
+                
+             </a>
+             <ul class= "menu">
+                 <li> <a href= "index.html" class="active"><i class="uil uil-house-user" style="font-size: 30px;"></i> Home </a> </li>
+                 <li> <a href= "index.html"><i class="uil uil-cloud-info" style="font-size: 30px;"></i> About </a> </li>
+                 <li> <a href= "index.html"><i class="uil uil-check-circle" style="font-size: 30px;"></i> Our missions </a> </li>
+                 <li>
+                     <a href= "signin.html"><i class="uil uil-user-circle" style="font-size: 30px;"></i>My account</a> </li>
+                     <li> <a href= "index.html"> <i class="uil uil-star" style="font-size: 30px;"></i>Reviews</a> </li>
+                 <li> <a href= "index.html"> <i class="uil uil-envelope-redo" style="font-size: 30px;"></i>Contact </a> </li>
+             </ul>    
+             <ul>
+                 <li> <a href="#" class="nactive"><i class="uil uil-usd-circle" style="font-size: 30px;"></i>Donate now </a> </li>
+             </ul> 
+         </nav>
+        </div>
+        </section>
+        <section class="main_2">
+            
+            <div class="wrapper">
+              <div class="buttonWrapper">
+                <button class="tab-button active" style="border-top-left-radius: 10px;" data-id="Part1">Part 1</button>
+                <button class="tab-button" data-id="Part2">part 2</button>
+                <button class="tab-button" style="border-top-right-radius: 10px;" data-id="Part3">Part 3</button>
+              </div>
+              <div class="contentWrapper">
+                <p class="content active" id="Part1">
+                 
+                    Learn about the two major linguistic preferences to address disability Putting the person first, as in “people with disability,” is called people-first language. It is commonly used to reduce the dehumanization of disability. Another popular linguistic prescription is the identity-first language, as in “disabled people.” Many use this style to celebrate disability pride and identity or simply because they prefer this. There is no unanimity on which is the more respectful style, it comes down to personal preference. One suggested middle-ground is to use these two styles interchangeably to acknowledge and respect the individual preferences of an exceptionally diverse group of people.
+                  <br> <br> Avoid condescending euphemisms Terms like differently-abled, challenged, and handi-capable are often considered condescending. By shying away from mentioning disability, we may reinforce the notion that disability is something of which to be ashamed. The word special is a particularly entrenched because it can be used as a euphemism but also may be utilized technically (e.g., “special education”). There is a desire to move away from this word. However, there is also acknowledgement that terms such as “special needs” are uniquely situated to introduce non-disabled parents and loved ones of children with disabilities to a rich and complex world of disability access, inclusion, accommodation rights, and systems of support.
+                   <br> <br>Avoid offensive language – even as a joke Examples of offensive terms: mad, freak, psycho, retard, lame, imbecile, crazy. Don’t call someone “a retard” or “retarded” if they do something silly, unwise, thoughtless, short-signed, dangerous, ill-advised, frustrating, etc. Other examples include asking someone jokingly, “Are you deaf/blind?” “Can’t you see/hear?”</p>
+                <p class="content" id="Part2">
+               
+        The words we use to describe individuals with disabilities matters. According to the World Health Organization, the disability community is the largest minority group in the world: around 10% of the world's population, or 650 million people, live with a disability making the disability community the largest minority group in the world. Although there is not a monolithic language style preference shared across all the people who have a disability, it remains important to use respectful and inclusive language when communicating with or talking about people with disabilities.
+        <br>
+        <br>
+        Be mindful of the diversity in the disability community Disability is diverse both in terms of conditions and the people who have them. With all the differences in cultures, languages, genders, beliefs, and environments, remember that it is possible for two people with the same diagnosis or circumstance to feel completely differently about their disability.
+        
+       <br>
+       <br>
+        Ask individuals what language they would like used to describe their disability If someone is willing to disclose their disability, it is best to ask them how they want you to refer to (or not refer to) their disability. In addition to word choice, it is important to note that people may want different levels of disclosure. In other words, some people may feel more comfortable discussing their disabilities than others or may feel differently about disclosure in different situations  </p>
+                <p class="content" id="Part3">
+                
+                    Describing people without disabilities Do not use words that suggest undesirable stereotypes of people with disability. When describing people without disabilities, don’t use terms like normal, healthy, able-bodied. Instead, use “non-disabled” or “people without visible disabilities.” Such terms are more accurate, because we often cannot tell whether someone has a disability just by their physical appearance.
+                  <br><br>      Not all disabilities are illnesses and not all people with disabilities are patients People with disabilities can be healthy even if they have a chronic condition like diabetes. It is only appropriate to refer to someone as a patient in a medical setting, regardless of their disability status. It is also important to recognize that wellness is an individual endeavor: people with disabilities experience wellness, physical/health fitness, and recreational activities at myriad levels. No person, regardless of ability or desire to participate in wellness activities, is more or less deserving of dignity and respect.
+                  <br><br>Do not mention someone’s disability unless it is essential to the story It is OK to identify a person’s disability when it is necessary for clarity or provides important information. For instance, “Virali, who uses a wheelchair, spoke about her experience with using accessible transportation” is totally fine, since it adds a new layer to the story. In other instances, the disability may be irrelevant. For example, do not say, “Charles, who has a congenital disability, wants more sugar in his caramel espresso.”</p>
+              </div>
+            </div>
+          
+        </section>
+            
+<script>
+    const tabs = document.querySelector(".wrapper");
+const tabButton = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".content");
+
+tabs.onclick = e => {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabButton.forEach(btn => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    contents.forEach(content => {
+      content.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+}
+</script>   
+ 
+</body>
+</html>

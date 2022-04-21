@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+   --blue:#3498db;
+   --dark-blue:#2980b9;
+   --red:#e74c3c;
+   --dark-red:#c0392b;
+   --black:#333;
+   --white:#fff;
+   --light-bg:#eee;
+   --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none;
+    border: none;
+   text-decoration: none;
+}
+body {
+   width: 100%;
+   min-height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(bg.jpg);
+   background-position: center;
+   background-size: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.btn,
+.delete-btn{
+   display: block;
+   width: 100%;
+   padding: 15px 20px;
+   text-align: center;
+   border: none;
+   background: #a29bfe;
+   outline: none;
+   margin-top: 10px;
+   border-radius: 30px;
+   font-size: 1rem;
+   color: #FFF;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.btn:hover,.delete-btn:hover{
+   transform: translateY(-5px);
+   background: #6c5ce7;}
+
+
+.form-container{
+   min-height: 100vh;
+   background-color: var(--light-bg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   width: 700px;
+}
+
+.form-container form{
+   width: 100%;
+   height: 100%;
+   border: 2px solid #e7e7e7;
+   padding: 15px 20px;
+   font-size: 1rem;
+   border-radius: 30px;
+   background: transparent;
+   outline: none;
+   transition: .3s;
+}
+
+
+.form-container form .box{
+   width: 100%;
+   border-radius: 5px;
+   padding:12px 14px;
+   font-size: 18px;
+   color:var(--black);
+   margin:10px 0;
+   background-color: var(--light-bg);
+}
+
+.form-container form p{
+   text-decoration: none;
+   color: #6c5ce7;
+}
+
+.form-container form p a{
+   text-decoration: none;
+   color: #6c5ce7;}
+
+.form-container form p a:hover{
+   text-decoration: underline;
+}
+
+.container{
+   min-height: 100vh;
+   background-color: var(--light-bg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+}
+
+.container .profile{
+   padding:20px;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   width: 700px;
+   border-radius: 5px;
+}
+
+.container .profile img{
+   height: 200px;
+   width: 200px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin-bottom: 5px;
+}
+
+.container .profile p{
+   margin-top: 20px;
+   color:var(--black);
+   font-size: 20px;
+}
+
+.container .profile p a{
+   text-decoration: none;
+   color: #6c5ce7;}
+
+.container .profile p a:hover{
+   text-decoration: underline;
+}
+
+.update-profile{
+   min-height: 100vh;
+   background-color: #eee;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   width: 700px;
+}
+
+.update-profile form{
+   padding:20px;
+   background-color: white;
+   box-shadow: var(--box-shadow);
+   text-align: center;
+   border-radius: 5px;
+}
+
+.update-profile form img{
+   height: 150px;
+   width: 150p;
+   border-radius: 100%;
+   object-fit: cover;
+   margin-bottom: 50px;
+}
+
+.update-profile form .flex{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   gap:15px;
+}
+
+.update-profile form .flex .inputBox{
+   width: 49%;
+}
+
+
+.update-profile form .flex .inputBox .box{
+   width: 100%;
+   border-radius: 15px;
+   background-color: var(--light-bg);
+   padding:12px 14px;
+   font-size: 17px;
+   color:var(--black);
+   margin-top: 10px;
+}
+
+@media (max-width:650px){
+   .update-profile form .flex{
+      flex-wrap: wrap;
+      gap:0;
+   }
+   .update-profile form .flex .inputBox{
+      width: 100%;
+   }
+}
+#block{
+   height:120px;
+   background-color:#0099FF;
+   border:2px solid #8c8b8b;
+   }
+   .inputFields{
+      width:210px;
+      height:20px;
+      border:1px solid #999;
+      outline:none;
+      border-radius:5px;
+   }
+   .thebuttons{
+      width:210px;
+      height:30px;
+      background-color:#33adff;
+      border:2px solid #8c8b8b;
+      font-weight:bold;
+      font-family:tahoma;
+      color:#FFF;
+      border-radius:4px;
+   }
+   #form{
+      width:600px;
+      margin-left:150px; 
+      margin-top:40px;
+      font-family:tahoma;
+   }
+   #donate{
+      margin-left:230px;
+      margin-top:97px;
+      
+      width:900px;
+   }   
+   #come{
+      width:600px;
+      background-color:light blue;
+      margin:0px auto;
+      min-height:700px;
+      margin-top:40px;
+      border:1px solid black;}

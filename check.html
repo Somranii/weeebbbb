@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3aweni</title>
+</head>
+<body>
+      <section class="main-1">
+        <nav>
+            
+
+            <a href="logo.png" class="logo"> 
+                <span>3aweni</span>    
+                
+             </a>
+             <ul class= "menu">
+                 <li> <a href= "index.html" class="active"><i class="uil uil-house-user" style="font-size: 30px;"></i> Home </a> </li>
+                 <li> <a href= "index.html"><i class="uil uil-cloud-info" style="font-size: 30px;"></i> About </a> </li>
+                 <li> <a href= "index.html"><i class="uil uil-check-circle" style="font-size: 30px;"></i> Our missions </a> </li>
+                 <li>
+                     <a href= "signin.html"><i class="uil uil-user-circle" style="font-size: 30px;"></i>My account</a> </li>
+                     <li> <a href= "index.html"> <i class="uil uil-star" style="font-size: 30px;"></i>Reviews</a> </li>
+                 <li> <a href= "index.html"> <i class="uil uil-envelope-redo" style="font-size: 30px;"></i>Contact </a> </li>
+             </ul>    
+             <ul>
+                 <li> <a href="#" class="nactive"><i class="uil uil-usd-circle" style="font-size: 30px;"></i>Donate now </a> </li>
+             </ul> 
+         </nav>
+        </div>
+        </section>
+        <section class="main_2">
+            
+            <div class="wrapper">
+              <div class="buttonWrapper">
+                <button class="tab-button active" style="border-top-left-radius: 10px;" data-id="Part1">Luis's story</button>
+                <button class="tab-button" data-id="Part2">Martine's story</button>
+                <button class="tab-button" style="border-top-right-radius: 10px;" data-id="Part3">Ilya's story</button>
+              </div>
+              <div class="contentWrapper">
+                <p class="content active" id="Part1">
+                    <b>Luis, supermarket assistant with Down syndrome</b><br> <br>Luis has Down syndrome and has difficulty with abstract concepts, reading, and math calculations.
+
+                    Luis works at a market, bagging groceries for customers. Typically he buys his groceries at the same market where he works, but he is sometimes confused by the large number of product choices and sometimes has problems finding his favorite items when the store layout is changed.
+                    
+                    Recently, a friend showed him an app for online grocery purchases that has consistent, easy-to-use navigation with clear and direct instructions. Luis is able to add the list of his most frequently purchased items into the app and save it for additional purchases. He also likes the search functionality that makes suggestions for mistyped or misspelled words. The app also keeps a running total of the items in his virtual shopping cart which helps him keep up with how much he is spending.
+                    
+                    His friend also showed him several accessibility features in his mobile phone that he finds very helpful including word prediction which provides a selection of possible word choices based on the first characters he enters and the text-to-speech functionality which allows him to listen to reviews posted by other users on the grocery app. With the use of these tools, Luis has begun posting his own reviews of items he has purchased.
+                    
+                    Luis now uses the shopping app a couple of times a month for frequently purchased items and buys a few fresh items regularly from the store where he works.
+                     
+                </p>
+                <p class="content" id="Part2">
+                    <b>Martine, online student who is hard of hearing</b>
+                    <br><br>Martine is 62 years old and has been hard of hearing since birth. She can hear some sounds, but not enough to understand speech. As a child she learned sign language and during her early school years learned written language. She is currently a student again, taking online college courses.
+                    
+                    The university she attends provides sign language interpreters and Communication Access Realtime Translation (CART) writers who provide written verbatim text interpreting of spoken language for her courses. However, Martine has encountered barriers when video and other media content are not captioned. The university became aware of the need and requirement to provide captioned media and transcripts for audio content and is now working with a captioning provider to caption all content posted on university websites, including all course content in learning management systems. In addition to providing access to the content for students who are deaf or hard of hearing, the university has found that the use of captions and transcripts has added benefits. Transcripts facilitate easier production of subtitles in a number of languages and also improve the indexing of online content. Improved indexing provides improved search engine optimization and improved discoverability of the university’s online content. The university follows WCAG guidelines in providing the captioned content.
+                    </p>
+                <p class="content" id="Part3">
+                    <b>Ilya, senior staff member who is blind</b><br>
+                    <br>Ilya is blind. She is the chief accountant at an insurance company that uses web-based documents and forms over a corporate intranet and like many other blind computer users, she does not read Braille.
+                    
+                    Ilya uses a screen reader and mobile phone to access the web. Both her screen reader and her mobile phone accessibility features provide her with information regarding the device’s operating system, applications, and text content in a speech output form.
+                    
+                    When accessing web content, the screen reader indicates aloud the structural information on a webpage such as headings, column and row headers in tables, list items, links, form controls, and more that enable her to better navigate the page, complete and submit forms, and access information in an effective manner. She is able to listen to and understand speech output at a very high speed. Ilya encounters problems when websites are not properly coded and do not include alt text descriptions on images. These sites are unnavigable and require large amounts of time to read text from the top of the page to the bottom without navigation cues. Occasionally she finds herself trapped in areas on a webpage unable to move to another area and must abandon the page altogether.
+                    
+                    As a senior member of her organization, Ilya provides training to employees in online environments through the use of video conferencing applications, document and slide sharing applications as well as chat rooms. Ilya and her staff evaluated a number of training tools before finding an effective application with accessibility features that meet the needs of a diverse staff with diverse abilities.</p>
+                             </p>
+              </div>
+            </div>
+          
+        </section>
+            
+<script>
+    const tabs = document.querySelector(".wrapper");
+const tabButton = document.querySelectorAll(".tab-button");
+const contents = document.querySelectorAll(".content");
+
+tabs.onclick = e => {
+  const id = e.target.dataset.id;
+  if (id) {
+    tabButton.forEach(btn => {
+      btn.classList.remove("active");
+    });
+    e.target.classList.add("active");
+
+    contents.forEach(content => {
+      content.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
+}
+</script>   
+ 
+</body>
+</html>

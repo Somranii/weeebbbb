@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style_sab.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+     <form method="post" action="signup.php" class="login-email" enctype="multipart/form-data">
+        <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+        <div class="input-group">
+<label for="a" >Full name :</label>
+<input type="text" id="a" required name="name" placeholder="name"></div><br>
+<div class="input-group">
+<label for="t" >age :</label>
+<input type="number" id="t" required name="age" placeholder="age"></div><br><div class="input-group">
+<label for="c" >phone number :</label>
+<input type="number" id="c" required name="number" placeholder="number"></div><br>
+
+<label >gender : </label>
+<input type="radio" value="male" name="gender" id="w"> <label for="w" > male </label>
+<input type="radio" value="female" name="gender" id="v"> <label for="v" > female </label>
+<br> <br>
+<label >choose an option : </label>
+<input type="radio" value="doner" name="type_p" id="x" onclick="h(1)"> <label for="x" > doner </label>
+<input type="radio" value="handicap" name="type_p" id="y" onclick="h(0)" checked> <label for="y" > handicap </label>
+<br>
+
+<select id="list" name="type_d" > 
+<option selected disabled value=""></option>
+<option value="vision impairment" >vision impairment</option>
+<option value="deaf" >deaf</option>
+<option value="intellectual disability" >intellectual disability</option>
+<option value="autism" >autism</option>
+<option value="physical disability" >physical disability</option>
+</select> <br> <br>
+<div class="input-group">
+<label for="d" >mail :</label>
+<input type="email" id="d" required name="mail" placeholder="email"></div><br><div class="input-group">
+<label for="pass1" >password</label>
+<input type="password" id="pass1" placeholder="password" required name="password">
+<span id="message" style="color: red;"></span></div>
+<br><div class="input-group">
+<label for="pass2" >confirm your password</label>
+<input type="password" name="password2" placeholder="confirm password" id="pass2" required></div><br>
+<input type="file" name="image" class="box" >
+<div class="input-group">
+<button type="submit" class="btn" onclick="checkpassword()" name="submit">register</button></div>
+<p class="login-register-text">Have an account? <a href="signin.html">Login Here</a>.</p>
+
+     </form>
+    </div>
+    </body>
+</html>

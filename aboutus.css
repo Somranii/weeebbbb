@@ -1,0 +1,193 @@
+:root {
+    --paper-shadow: #c9bf8d;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "Go Back";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid transparent;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  font-size: 2rem;
+  background: #91b3f8;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #91b3f8;
+  font-size: 2rem;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+  
+  body {
+
+    display: flex;
+    justify-content: center;
+    padding: 10vmin;
+    background-color: #f0f5ff;
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+  }
+  
+  .paper {
+    --paper-dark: #91b3f8;
+    --paper-color: #91b3f8;
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 525px;
+    min-height: 175px;
+    background: linear-gradient(
+      135deg,
+      var(--paper-dark),
+      30%,
+      var(--paper-color)
+    );
+    box-shadow: 3px 3px 2px var(--paper-shadow);
+    transform: rotate(0deg);
+    transform-origin: top left;
+  }
+  
+  .paper p {
+    margin: auto;
+  }
+  
+  .pin {
+    --pin-color: #d02627;
+    --pin-dark: #9e0608;
+    --pin-light: #fc7e7d;
+  
+    position: absolute;
+    left: 20px;
+    width: 60px;
+    height: 50px;
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 18px;
+    left: -8px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: radial-gradient(var(--paper-shadow), 20%, rgba(201, 191, 141, 0));
+  }
+  
+  .metal {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(to right, #808080, 40%, #eae8e8, 50%, #808080);
+    border-radius: 0 0 30% 30%;
+    transform: rotate(50deg);
+    transform-origin: bottom left;
+    top: 15px;
+    border-bottom: 1px solid #808080;
+  }
+  
+  .bottom-circle {
+    position: absolute;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: var(--pin-color);
+    background: radial-gradient(
+      circle at bottom right,
+      var(--pin-light),
+      25%,
+      var(--pin-dark),
+      90%,
+      var(--pin-color)
+    );
+  }
+  
+  /* Barrel */
+  .bottom-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 20px;
+    height: 30px;
+    transform: rotate(55deg);
+    transform-origin: 100% 100%;
+    border-radius: 0 0 40% 40%;
+    background: linear-gradient(
+      to right,
+      var(--pin-dark),
+      30%,
+      var(--pin-color),
+      90%,
+      var(--pin-light)
+    );
+  }
+  
+  /* Top circle */
+  .bottom-circle::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at right,
+      var(--pin-light),
+      30%,
+      var(--pin-color),
+      var(--pin-dark) 80%
+    );
+  }
+  
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+  background-color: #91b3f8;
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent);
+    shape-margin: 10px;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
