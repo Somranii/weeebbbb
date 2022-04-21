@@ -13,7 +13,7 @@ $cmdp=$_POST['password2'];
 $image = $_FILES['image']['name'];
 $image_size = $_FILES['image']['size'];
 $image_tmp_name = $_FILES['image']['tmp_name'];
-$image_folder = 'images/'.$image;
+$image_folder = '../media/'.$image;
 $c=mysqli_connect('localhost','root','','tuto');
 if(!$c){die(mysqli_connect_error());}
 else{
@@ -28,7 +28,7 @@ $sql = "SELECT * FROM user WHERE mail='$mail'";
 			$req=mysqli_query($c,"insert into user(name,age,phone,sexe,type_p,type_d,mail,mdp,image) values('$name','$age','$phone','$gender','$type_p','$type_d','$mail','$mdp','$image') ");
 			if ($req) {
 				move_uploaded_file($image_tmp_name, $image_folder);
-				header('location:my_account.php'); 	
+				header('location:./my_account.php'); 	
 			} else {
 				echo "Something Wrong Went";
 			}

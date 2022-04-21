@@ -10,8 +10,9 @@ else{
 $req=mysqli_query($c,"insert into user(name,age,phone,sexe,type_p,type_d,mail,mdp,image) values('$name','$age','$phone','$gender','$type_p','$type_d','$mail','$mdp','$image') ");
 			if ($req) {
 				move_uploaded_file($image_tmp_name, $image_folder);
-				header('location:my_account.php'); 	
+				header('location:./my_account.php'); 	
 			} else {
 				echo "Something Wrong Went";
 			}
-		}
+		
+		?>

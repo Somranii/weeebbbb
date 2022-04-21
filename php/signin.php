@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 	if ($result->num_rows > 0) {
 		$row = mysqli_fetch_assoc($result);
 		$_SESSION['user_id'] = $row['id'];
-		header('location:my_account.php');
+		header('location:./my_account.php');
 	} else {
 		echo "<script>alert('Woops! Email or Password is Wrong.')</script> ";
 	}

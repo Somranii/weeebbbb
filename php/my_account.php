@@ -4,13 +4,13 @@ session_start();
 $user_id = $_SESSION['user_id'];
 
 if(!isset($user_id)){
-   header('location:signin.html');
+   header('location:../html/signin.html');
 };
 
 if(isset($_GET['logout'])){
    unset($user_id);
    session_destroy();
-   header('location:signin.html');
+   header('location:../html/signin.html');
 }
 
 ?>
@@ -21,7 +21,7 @@ if(isset($_GET['logout'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>my account</title>
-    <link rel="stylesheet" href="style_1.css" type="text/css">
+    <link rel="stylesheet" href="../css/style_1.css" type="text/css">
 </head>
 <body>
  <div class="container">
@@ -32,9 +32,9 @@ if(isset($_GET['logout'])){
           $fetch = mysqli_fetch_assoc($select);
        }
        if($fetch['image'] == ''){
-          echo '<img src="images/default-avatar.png">';
+          echo '<img src="../media/default-avatar.png">';
        }else{
-          echo '<img src="images/'.$fetch['image'].'">';
+          echo '<img src="../media/'.$fetch['image'].'">';
        }
        ?><br>
      <label for="nom">username : </label>     
@@ -58,10 +58,10 @@ if(isset($_GET['logout'])){
      <label for="dis">form of disability : </label>
          <?php echo $fetch['type_d']; ?><br>
 
-      <a href="update_profile.php" class="btn">update profile</a>
-      <a href="donation.php" class="btn">donate now</a>
-      <a href="my_account.php?logout=<?php echo $user_id; ?>" class="btn">logout</a>
-      <p >new <a href="signin.html">login</a> or <a href="signup.html">register</a></p>
+      <a href="./update_profile.php" class="btn">update profile</a>
+      <a href="./donation.php" class="btn">donate now</a>
+      <a href="./my_account.php?logout=<?php echo $user_id; ?>" class="btn">logout</a>
+      <p >new <a href="../html/signin.html">login</a> or <a href="../html/signup.html">register</a></p>
    </div>
 
 </div>

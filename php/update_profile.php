@@ -66,7 +66,7 @@ if(!empty($update_email)){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>update profile</title>
-   <link rel="stylesheet" href="style_1.css" type="text/css">
+   <link rel="stylesheet" href="../css/style_1.css" type="text/css">
 </head>
 <body>  
 <div class="update-profile">
@@ -80,9 +80,9 @@ if(!empty($update_email)){
    <form action="" method="post" enctype="multipart/form-data">
       <?php
           if($fetch['image'] == ''){
-            echo '<img src="images/default-avatar.png">';
+            echo '<img src="../media/default-avatar.png">';
          }else{
-            echo '<img src="images/'.$fetch['image'].'">';
+            echo '<img src="../media/'.$fetch['image'].'">';
          }
       ?>
       <div class="flex">
@@ -110,7 +110,7 @@ if(!empty($update_email)){
          </div>
       </div>
       <input type="submit" value="update" name="update_profile" class="btn">
-      <a href="my_account.php" class="delete-btn">go back</a>
+      <a href="./my_account.php" class="delete-btn">go back</a>
    </form>
 </div>
 
